@@ -7,18 +7,13 @@ html,body{
   width: 100%;
   height:100%;
 }
-body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .character{
-  background-image: url(./character.png);
   width: 100px;
   height: 100px;
+  background: center no-repeat;
+  /*background-position요소가 background-image뒤로가면 사라짐 왤까?*/
+  background-image: url(./character.png);
   background-size: 100px;
-  position: relative;
-  left:0;
-  top:0;
-  border: 3px solid red;
-}
+  position: absolute;
+  }
